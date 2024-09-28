@@ -1,0 +1,12 @@
+os tipos de dados que podem ser armazenados numa variavel são:
+1) inteiros
+a) int = número inteiro (geralmente 4 bytes).
+b) short = inteiro menor (geralmente 2 bytes).
+c)long = inteiro maior (geralmente 4 ou 8 bytes).
+D)long long = inteiro ainda maior (geralmente 8 bytes).
+2)Ponto Flutuante:
+a) float = número fracionário de precisão simples (geralmente 4 bytes).
+b) double = número fracionário de precisão dupla (geralmente 8 bytes).
+c) long double = número fracionário com precisão ainda maior (tamanho depende da implementação).
+3) Caractere:
+a) char = armazena um único caractere (geralmente 1 byte).
