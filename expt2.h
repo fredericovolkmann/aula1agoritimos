@@ -1,7 +1,5 @@
-// minha_funcao.h
-#ifndef MINHA_FUNCAO_H
-#define MINHA_FUNCAO_H
+#ifndef EXPT2_H
+#define EXPT2_H
 
-void minha_funcao(); // Declaração da função
-
+void soma(int n1,int n2);
 #endif
