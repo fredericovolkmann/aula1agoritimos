@@ -9,12 +9,12 @@ int main(){
     double c;
     double d;
     printf("digite um numero fracionado: ");
-    scanf("%lf",&c);
+    scanf("%lf"&c);
     printf("digite um numero fracionado: ");
-    scanf("%lf",&d);
+    scanf("%lf"&d);
     int divisao_inteira = a/b;
     double divisao_fracionada = c/d;
-    printf("resultado da divisao inteira e: %.2d\n",divisao_inteira);
+    printf("resultado da divisao inteira e: %.2f\n",divisao_inteira);
     printf("resultado da divisao fracionada e: %.2f\n",divisao_fracionada);
     return 0; 
 }
