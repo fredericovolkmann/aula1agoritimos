@@ -1,16 +1,19 @@
 #include <stdio.h>
-#include "expt2.h"
+#include "main_fatorial.h"
 
-int main() {
-     int n1;
-    int n2;
-    printf("digite um numero: ");
-    scanf("%d",&n1);
-    printf("digite um numero: ");
-    scanf("%d",&n2);
-    n1 = n1*2;
-    n2 = n2*2;
-    soma(n1,n2);
+int fatorial (int n){
+int acumulador = 1;
+for (int i=n;i>=1;i--){
+    acumulador= i * acumulador;
+}
+return acumulador;
+}
 
-    return 0;
+int main(){
+int n;
+printf("digite um numero: ");
+scanf("%d",&n);
+int acumulador=fatorial(n);
+printf("%d\n",acumulador);
+return 0;
 }
