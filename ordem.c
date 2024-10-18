@@ -2,14 +2,14 @@
 #include <stdlib.h>
 #include <time.h>
 int main () {
-    
-    int n[10];
+    int tam = 30;
+    int n[tam];
     int i = 0;
     int x;
     
-    while(i<10){
+    while(i<tam){
         int dentro=0;
-        x=rand()%10;
+        x=rand()%1000;
      for(int j = 0; j < i; j++) {
         
         if(n[j]==x){dentro=1;
@@ -23,8 +23,8 @@ int main () {
     }
 
 
- for(int i = 0; i < 10; i++) {
-     printf("%d\n",n[i]);
+ for(int i = 0; i < tam; i++) {
+     printf("%d: %d\n", i, n[i]);
 }
 
 }
