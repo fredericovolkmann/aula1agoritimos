@@ -1,1 +1,30 @@
-
+ordenação de numeros;
+peça ao usuario 3 numeros;
+if (num1<num2) {
+  if (num2<num3) {
+    printf (num1,num2,num3);
+  }
+  else
+  {
+    if (num1<num3) {
+      printf (num1,num3num2)
+      printf (num3,num1,num2);
+  }
+  else
+  {
+    if (num1<num3) {
+      printf(num2,num1,num3);
+      
+  }
+        
+  else 
+  {
+    if (num2<num3) {
+      printf(num2,num3,num1);
+      return;
+    }
+     else
+  {
+    printf(num3,num2,num1);
+  }
+                    }
