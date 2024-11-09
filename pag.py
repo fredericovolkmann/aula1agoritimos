@@ -3,9 +3,17 @@ import pyautogui
 import keyboard
 import time
 import getpass
-a=input("seu nome no sigaa: ")
+#sites //no caso  para eu colocar outros site teria que fazer uns esquemas com if else elif por que cada site muda a tela de login mas eu vou fazer isso mais depois 
+sigaa="sig.ifc.edu.br"
+
+#materias
+m=input("qual materia o usuario quer ver: ")
+a=input("seu nome de usuario :")
+print (a)
 b=getpass.getpass("Digite a senha: ")
 print(b)
+print(a)
+
 # Abrir o Navegador
 pyautogui.press('win')  # Open Start menu
 
@@ -21,17 +29,17 @@ pyautogui.press('enter')  # Open the application
 # Esperar o navegador abrir e pesquisar pelo site
 time.sleep(7)
 
-pyautogui.write ('sig.ifc.edu.br')
+pyautogui.write (sigaa)
 pyautogui.press ('Enter')
 
-time.sleep(7)
-pyautogui.press ('Enter')
+time.sleep(4)
+
 # pyautogui.press ('Enter')
 pyautogui.write (a) #Escreva seu nome de usuário
-time.sleep(2)
+
 pyautogui.press ('tab') #Pular um
 pyautogui.write (b) #Escreva sua senha
-time.sleep(2)
+
 pyautogui.press ('Enter')
 
 time.sleep(3)
@@ -39,9 +47,9 @@ pyautogui.keyDown('ctrl')
 time.sleep(2)
 pyautogui.press ('f')
 pyautogui.keyUp('ctrl')
-pyautogui.write('algoritimos')
+pyautogui.write(m)
 pyautogui.keyDown('ctrl')
 time.sleep(2)
 pyautogui.press ('Enter')
 pyautogui.keyUp('ctrl')
-time.sleep(3)
+time.sleep(3) 
