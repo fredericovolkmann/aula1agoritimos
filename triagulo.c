@@ -31,7 +31,7 @@ void sleep_ms(int milliseconds)
 #endif
 }
 
-void desenhar_retangulo(int x1, int y1, int x2, int y2,int t)
+void desenhar_triangulo(int x1, int y1, int x2, int y2, int t)
 {
     int l1;
     int l2;
@@ -41,7 +41,7 @@ void desenhar_retangulo(int x1, int y1, int x2, int y2,int t)
     int n;
     int y;
     int num;
-    
+    int l;
 
     for (l1 = y1; l1 < y2; l1++)
     {
@@ -49,9 +49,7 @@ void desenhar_retangulo(int x1, int y1, int x2, int y2,int t)
         sleep_ms(t);
         gotoxy(x1, l1);
         printf("*");
-        fflush(stdout);
     }
-
     for (l2 = x1; l2 < x2; l2++)
     {
 
@@ -60,35 +58,26 @@ void desenhar_retangulo(int x1, int y1, int x2, int y2,int t)
         printf("*");
         fflush(stdout);
     }
-    for (l3 = y2; l3 > y1; l3--)
+    for (int l = 1; l < x2/2; l++)
     {
 
         sleep_ms(t);
-        gotoxy(x2, l3);
+        gotoxy(x1 + l*2, y1 + l);
         printf("*");
         fflush(stdout);
     }
-
-    for (l4 = x2; l4 > x1; l4--)
-    {
-
-        sleep_ms(t);
-        gotoxy(l4, y1);
-        printf("*");
-        fflush(stdout);
-    }
-    gotoxy(1, y2 + 1);
 }
-
-
- int main(void){
+int main(void)
+{
     clear();
-    for( int d=1;  d<30;d=d+3 ){
+    //for (int d = 1; d < 30; d = d + 3)
+    //{
+
+     int d=10;
+        desenhar_triangulo(1,20,20,30,5);
         
-        desenhar_retangulo(10+d,1+d,50+d,10+d,5);
-    }
-     for( int d=1;  d<30;d=d+3 ){
-    desenhar_retangulo(70+d,2+d,80+d,5+d,5);
-     desenhar_retangulo(60+d,14+d,70+d,18+d,5);
-     }
- }
+        desenhar_triangulo(1+d,20+d,20+d,30+d,5);
+        // desenhar_triangulo(10,30,30,40,5);
+    //}
+    
+}
